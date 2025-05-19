@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Properties from "./components/Properties";          // Pour la liste des propriétés
+import ReservationForm from "./components/ReservationForm";  // Pour le formulaire de réservation
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <h1>Agence Immobilière</h1>
+        <Routes>
+          <Route path="/" element={<Properties />} />
+          <Route path="/reserve" element={<ReservationForm />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

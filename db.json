@@ -1,0 +1,32 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "title": "Maison de campagne",
+      "price": 250,
+      "available": true,
+      "views": 0,
+      "evaluations": [
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Appartement S+2",
+      "price": 400,
+      "available": false,
+      "views": 1,
+      "evaluations": []
+    },
+    {
+      "id": "3",
+      "title": "Villa avec piscine",
+      "price": 1000,
+      "available": false,
+      "views": 12,
+      "evaluations": [
+        5,
+        5
+      ]
+    }
+  ]
+}
